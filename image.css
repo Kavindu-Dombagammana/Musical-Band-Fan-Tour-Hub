@@ -1,12 +1,14 @@
-.card {
+/* This is for the 1st card */
+.card-1 {
     width: 300px;
-    height: 300px;
+    height: 400px;
     background: lightgrey;
     border-radius: 20px;
     box-shadow: -8px 8px 0px 5px rgb(50, 50, 50, 0.2);
     border: solid 2px white;
     overflow: hidden;
     position: relative;
+    left:20px;
     transition: all 0.5s ease;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     transform: rotate(3deg) skewX(3deg);
@@ -31,16 +33,21 @@
 }
 
 .cardbottom {
-    width: 20%;
-    height: 31%;
+    width: 100%;
+    height: 21%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
     border-end-start-radius: 20px;
     border-end-end-radius: 20px;
-    background-color: rgb(165, 97, 232);
+    background-color: rgb(43, 65, 98);  /* This changed the color too */
     font-weight: 500;
     font-size: 20px;
     padding: 10px;
-    color: #a02626;
+    color: #ffffff;
+    text-shadow: black 1px 1px 2px;
     transition: all 0.2s ease;
+    z-index: 2;
 }
 
 
@@ -71,11 +78,11 @@
     z-index: 1;
 }
 
-.cardnewfilter {
+/*.card1newfilter {
     width: 75px;
     height: 30px;
     border-radius: 25px;
-    background-color: #fc6969;
+    background-color: #416de4;
     position: absolute;
     z-index: 2;
     display: flex;
@@ -86,30 +93,27 @@
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     font-weight: 500;
-}
+}  */
 
-.card:hover {
+.card-1:hover {
     transform: translateY(-5%);
     box-shadow: 0px 20px 10px rgb(50, 50, 50, 0.2);
 }
 
-.card:hover #cardbrightfilter {
+/* .card-1:hover .cardbrightfilter {
     transform: rotate(-42deg) translateX(-15%) translateY(-79%);
-}
+} */
 
-.card:active #cardtop {
+.card-1:active .cardtop {
     transform: scale(1.05);
 }
 
-.card:active #cardbottom {
-    background-color: #fc6969;
-}
-
-.card:active #cardbottom {
+.card-1:active .cardbottom {
+    background-color: #6982fc;
     color: white;
 }
 
-.card:active #cardbottom hr {
+.card-1:active .cardbottom hr {
     background-color: white;
 }
 
@@ -118,21 +122,73 @@
 
 
 
+/* This is for the 2nd card */
+.card-2 {
+    width: 300px;
+    height: 400px;
+    background: rgb(70, 10, 10);
+    border-radius: 20px;
+    box-shadow: 8px 8px 0px 5px rgb(50, 50, 50, 0.2);
+    border: solid 2px white;
+    overflow: hidden;
+    position: relative;
+    left:1150px;
+    transition: all 0.5s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transform: rotate(3deg) skewX(3deg);
+}
 
-            /* 2ND ALBUM COVER*/
 
-            .card2 {
-                width: 20%;
-                height: 31%;
-                border-end-start-radius: 20px;
-                border-end-end-radius: 20px;
-                background-color: rgb(229, 115, 219);
-                font-weight: 500;
-                font-size: 20px;
-                padding: 10px;
-                color: #a02626;
-                transition: all 0.2s ease;
-            }
+.cardbottom2 {
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-end-start-radius: 20px;
+    border-end-end-radius: 20px;
+    background-color: rgb(200, 84, 26);  /* This changed the color too */
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px;
+    color: #ffffff;
+    text-shadow: black 1px 1px 2px;
+    transition: all 0.2s ease;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.cardbottom2 hr {
+    height: 3px;
+    background-color: black;
+}
+
+.cardbottomtitle2 {
+    margin-bottom: 10px;
+}
+
+.card-2:hover {
+    transform: translateY(-5%);
+    box-shadow: 0px 20px 10px rgb(50, 50, 50, 0.2);
+}
+
+/* .card-1:hover .cardbrightfilter {
+    transform: rotate(-42deg) translateX(-15%) translateY(-79%);
+} */
+
+.card-2:active .cardtop {
+    transform: scale(1.05);
+}
+
+.card-2:active .cardbottom {
+    background-color: #6982fc;
+    color: white;
+}
+
+.card-2:active .cardbottom hr {
+    background-color: white;
+}
+
 
 
 
@@ -147,10 +203,11 @@
             }
 
 
-            /* used this for the 2nd card */
+            /* THIS IS THE 2ND PARA STYLE, FOR SOME REASON THIS DUPLICATE WILL NOT BE DELETED */
             .padding-3{
-                        background-color:rgb(240, 135, 226);
+                        background-color:rgb(190, 69, 9);
                         padding: 25px 45px 60px 40px;
+                        color: white;
                     }
 
                     .cal2{
@@ -169,25 +226,36 @@
 
 
 
+/* This is for the 3rd card */
+.card-3 {
+    width: 300px;
+    height: 300px;
+    background: rgb(2, 94, 34);
+    border-radius: 20px;
+    box-shadow: -8px 8px 0px 5px rgb(50, 50, 50, 0.2);
+    border: solid 2px white;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transform: rotate(3deg) skewX(3deg);
+}
 
 
+.cardbottom3 {
+    width: 20%;
+    height: 31%;
+    border-end-start-radius: 20px;
+    border-end-end-radius: 20px;
+    background-color: rgb(108, 4, 61);  /* This changed the color too */
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px;
+    color: #ffffff;
+    text-shadow: black 1px 1px 2px;
+    transition: all 0.2s ease;
+}
 
-
-
-                    /* 3RD ALBUM COVER*/
-
-                    .card {
-                        width: 20%;
-                        height: 31%;
-                        border-end-start-radius: 20px;
-                        border-end-end-radius: 20px;
-                        background-color: rgb(229, 115, 219);
-                        font-weight: 500;
-                        font-size: 20px;
-                        padding: 10px;
-                        color: #a02626;
-                        transition: all 0.2s ease;
-                    }
 
 
 

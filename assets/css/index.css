@@ -83,8 +83,10 @@ body{
 
 /* used this for the 1st card */
 .padding-2{
-            background-color:rgb(150, 78, 222);
+            background-color:rgb(43, 65, 98);
             padding: 25px 45px 60px 40px;
+            color:white;
+            /*text-shadow: black 1px 1px 2px; */
         }
 
         .cal{
@@ -103,6 +105,27 @@ body{
 
 
 
+/*used for the 2nd card */
+.padding-3{
+            background-color:rgb(200, 84, 26);
+            padding: 25px 45px 60px 40px;
+            color:rgb(255, 255, 255);
+            /*text-shadow: black 1px 1px 2px; */
+        }
+
+        .cal2{
+            padding: 25px 45px 60px 40px;
+            float:left;
+        }
+        
+.go{
+    box-shadow: 2px;
+    border-radius:5px;
+    position:absolute;
+    right:80px;
+    top:550px;
+    left:350px;
+}
 
 
 
