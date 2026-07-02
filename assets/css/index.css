@@ -1,3 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&display=swap');
+
 div marquee{
     animation-fill-mode: both;
 }
+
+body{
+            background-image: url("../image/70d1ff1d-a4ed-4a4d-bc48-9213e0428168.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width:100%;
+            height:100%;
+        }
+
+.navbar{
+    color:beige;
+    background-color:rgb(3, 4, 71);
+    padding:20px 40px;
+    border-radius:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    font-family: "Asimovian", sans-serif;
+    border-bottom:4px solid rgb(23, 168, 194);
+    box-shadow:0 10px 30px #7aecc644;
+    animation: anime 0.5s ease forward;
+}
+
+.currentline{
+            display:inline;
+        }
+
+.h-1{
+    font-family: "Asimovian", sans-serif;
+    font-size: 120px;
+    margin: 0;
+    position: relative;
+    color: black;
+    overflow: hidden;
+    transition: color 0.4s ease;
+}
+
+.h-1::before{ transform:translateY(100%);
+}
+
+.h-1 span {
+    display: inline-block;
+    transform: translateY(100%);
+    transition: transform 0.4s ease, color 0.4s ease;
+}
+
+.h-1:hover{
+    color: rgb(62, 167, 237);
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:32px;
+    color:antiquewhite;
+    transition:font-size 0.5s ease;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-block;
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover{
+    font-size: 18px;
+    color: rgb(44, 168, 251);
+}
+
+.image{
+    position:absolute;
+    right:1200px;
+}
+
+
+/* used this for the 1st card */
+.padding-2{
+            background-color:rgb(150, 78, 222);
+            padding: 25px 45px 60px 40px;
+        }
+
+        .cal{
+            padding: 25px 45px 60px 40px;
+            float:left;
+        }
+        
+.go{
+    box-shadow: 2px;
+    border-radius:5px;
+    position:absolute;
+    right:80px;
+    top:550px;
+    left:350px;
+}
+
+
+
+
+
+
+/* Used for marquee */
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    background: rgb(128, 29, 227);
+    color: white;
+    font-weight:bolder;
+    padding: 12px 0;
+    border-radius:20px;
+    position: relative;
+}
+
+.marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 20s linear infinite;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
