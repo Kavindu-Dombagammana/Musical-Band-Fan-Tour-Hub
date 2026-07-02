@@ -236,6 +236,7 @@
     border: solid 2px white;
     overflow: hidden;
     position: relative;
+    left:20px;
     transition: all 0.5s ease;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     transform: rotate(3deg) skewX(3deg);
@@ -244,10 +245,10 @@
 
 .cardbottom3 {
     width: 20%;
-    height: 31%;
+    height: 41%;
     border-end-start-radius: 20px;
     border-end-end-radius: 20px;
-    background-color: rgb(108, 4, 61);  /* This changed the color too */
+    background-color: rgb(38, 70, 107);  /* This changed the color too */
     font-weight: 500;
     font-size: 20px;
     padding: 10px;
@@ -256,6 +257,31 @@
     transition: all 0.2s ease;
 }
 
+.cardbottomtitle3 {
+    margin-bottom: 10px;
+}
+
+.card-3:hover {
+    transform: translateY(-5%);
+    box-shadow: 0px 20px 10px rgb(50, 50, 50, 0.2);
+}
+
+/* .card-1:hover .cardbrightfilter {
+    transform: rotate(-42deg) translateX(-15%) translateY(-79%);
+} */
+
+.card-3:active .cardtop {
+    transform: scale(1.05);
+}
+
+.card-3:active .cardbottom {
+    background-color: #6982fc;
+    color: white;
+}
+
+.card-3:active .cardbottom hr {
+    background-color: white;
+}
 
 
 
@@ -272,8 +298,9 @@
 
                     /* used this for the 3rd paragrapgh card */
                     .padding-4{
-                                background-color:rgb(74, 37, 209);
+                                background-color:rgb(61, 94, 126);
                                 padding: 25px 45px 60px 40px;
+                                color:white;
                             }
 
                             .cal3{
