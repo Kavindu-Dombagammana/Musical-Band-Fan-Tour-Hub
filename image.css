@@ -132,7 +132,7 @@
     border: solid 2px white;
     overflow: hidden;
     position: relative;
-    left:1150px;
+    left:1110px;
     transition: all 0.5s ease;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     transform: rotate(3deg) skewX(3deg);
@@ -301,6 +301,8 @@
                                 background-color:rgb(61, 94, 126);
                                 padding: 25px 45px 60px 40px;
                                 color:white;
+                                position:absolute;
+                                left:30px;
                             }
 
                             .cal3{
